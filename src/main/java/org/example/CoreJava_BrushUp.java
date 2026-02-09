@@ -1,5 +1,9 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class CoreJava_BrushUp {
 
     public static void  main(String[] args)
@@ -43,5 +47,16 @@ public class CoreJava_BrushUp {
         {
             System.out.println(ss);
         }
+
+        List<String> AL=Arrays.asList(SD);
+        for(String va : AL)
+        {
+            System.out.println(va);
+        }
+
+
+    }
+    public  void SetData(){
+        System.out.println("Shiva");
     }
 }
