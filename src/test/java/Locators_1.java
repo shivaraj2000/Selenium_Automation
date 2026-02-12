@@ -25,12 +25,15 @@ public class Locators_1 {
         driver.findElement(By.xpath("//form/input[3]")).sendKeys("7625356");
         driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
         System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+        String Password=driver.findElement(By.xpath("//p[@class='infoMsg']")).getText();
         driver.findElement(By.xpath("//button[contains(text(),'Go to Login')]")).click();
         driver.findElement(By.cssSelector("input#inputUsername")).sendKeys("Shiva");
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
         Thread.sleep(2000);
         driver.findElement(By.id("chkboxOne")).click();
         driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+        //System.out.println(driver.findElement(By.xpath("//div[@class='login-container']/p[contains(text(),'You are successfully logged in.')]")).getText());
+        System.out.println(driver.findElement(By.tagName("p")).getText());
 
 
 
