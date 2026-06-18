@@ -2,7 +2,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -10,7 +9,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
-public class FunctionalSelenium {
+public class Waits {
 
     public void AddItems(WebDriver driver, String[] productNames)
     {
@@ -57,7 +56,7 @@ public class FunctionalSelenium {
 
     public static  void  main(String[] args) throws InterruptedException {
 
-        FunctionalSelenium fs=new FunctionalSelenium();
+        Waits fs=new Waits();
         String[] productNames ={"Cucumber","Brocolli","Beetroot"};
 
         WebDriver driver = new ChromeDriver();
